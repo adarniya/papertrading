@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="login_page">
+        
+        <div class="login_box">
+            <div class="login_header">
+                <p class="heading">
+                    PAPER TRADE SYSTEM<br>
+                    NOT REAL STOCK EXCHANGE
+                </p>
+                    <p> Choose theme</p>
+                    <div class="tabs">
+                      <input type="radio" id="radio-1" name="tabs"  />
+                      <label class="tab" for="radio-1" onclick="applyTheme(0)">Light</label>
+                
+                      <input type="radio" id="radio-2" name="tabs" />
+                      <label class="tab" for="radio-2" onclick="applyTheme(1)">Dark</label>
+                
+                      <span class="glider"></span>
+                    </div>
+                
+                
+            </div>
+            <div class="login_container">
+                <label>USERNAME</label>
+                <input id="username_field" autocomplete="username" name="username" placeholder="Username" required>
+                <label>PASSWORD </label>
+                <input id="password-field" autocomplete="password-field"  name="password" placeholder="Password">
+                <div class="captcha">
+                   
+                      <input class="captcha_text"type="text" value="" readonly />
+                      <button class="refresh_button">
+                        <i class="fa-solid fa-rotate-right">
+                        </i> 
+                      </button>
+                      
+                      <div class="message"></div>
+                      <input class="captcha_input" type="text" placeholder="Enter captcha"/>
+                     
+                </div>
+               
+                
+                <div class="left-right">
+                    <a class="forgot_password" href="/forgot_password.html">Forgot password??</a>
+                    <button  type="button"  class="login_button" >Login</button>
+                    
+                </div>
+                <a class="register" href="#home">Register now(paper trading account) 
+
+                </a>
+            </div>
+            <p class="safety_tips">
+                <strong>Safety Tips:</strong><br>
+                1.Dont save your login id<br>
+                2.Dont share you login id<br>
+                3.Always logout before leaving<br>
+            </p>
+        </div>
+    </div>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
